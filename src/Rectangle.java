@@ -26,6 +26,9 @@ public class Rectangle extends Shape {
     }
 
     public void setWidth(double width) {
+      if (width<=0){
+          System.out.println("Invalid width");
+      }else
         this.width = width;
     }
 
@@ -34,6 +37,9 @@ public class Rectangle extends Shape {
     }
 
     public void setHeight(double height) {
+      if (height<=0){
+          System.out.println("Invalid height");
+      }else
         this.height = height;
     }
 

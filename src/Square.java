@@ -32,6 +32,10 @@ public class Square extends Rectangle{
 
 
     @Override
+    public double getArea() {
+        return getSide()*getSide();
+    }
+    @Override
     public double getPerimeter() {
         return super.getHeight() * super.getWidth();
     }
